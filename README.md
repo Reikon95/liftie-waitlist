@@ -86,6 +86,10 @@ If you wish to just develop locally and not deploy to Vercel, [follow the steps 
 
   Both `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` can be found in [your Supabase project's API settings](https://supabase.com/dashboard/project/_?showConnect=true)
 
+### Waitlist table
+
+The landing page submits signups to a `waitlist` table. Create it in the [Supabase SQL Editor](https://app.supabase.com) by running the script in `supabase/waitlist-schema.sql`. It creates a table with `email` (required, unique), `name` (optional), and `created_at`, plus RLS so anonymous users can insert and only the service role can read.
+
 5. You can now run the Next.js local development server:
 
    ```bash
