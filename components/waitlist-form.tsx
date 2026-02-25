@@ -148,7 +148,7 @@ export function WaitlistForm() {
             {status === "submitting" ? (
               <>
                 <Loader2 className="h-4 w-4 animate-spin" />
-                Joining…
+                Submitting...
               </>
             ) : (
               "Join waitlist"

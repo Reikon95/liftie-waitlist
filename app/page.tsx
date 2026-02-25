@@ -10,7 +10,7 @@ export default function Home() {
       <section className="px-5 sm:px-8 pt-16 sm:pt-24 pb-20 sm:pb-28">
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <h1 className="font-heading font-bold text-4xl sm:text-6xl tracking-tight text-foreground leading-[1.1]">
-            Lift smarter.
+            Liftie. Make lifting fun.
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto leading-relaxed">
             The iOS app that helps you train better. Coming soon. Get on the
