@@ -1,5 +1,6 @@
 import { WaitlistForm } from "@/components/waitlist-form";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -114,6 +115,9 @@ export default function Home() {
       <footer className="w-full border-t border-border/50 py-6 sm:py-8 mt-auto">
         <div className="max-w-5xl mx-auto px-4 sm:px-8 text-center text-sm text-muted-foreground">
           <p>Liftie is coming to the App Store soon.</p>
+          <p>
+            <Link href="/privacy">Privacy Policy</Link>
+          </p>
         </div>
       </footer>
     </main>
