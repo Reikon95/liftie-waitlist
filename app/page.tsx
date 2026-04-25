@@ -1,6 +1,7 @@
-import { WaitlistForm } from "@/components/waitlist-form";
 import Image from "next/image";
 import Link from "next/link";
+
+const APP_STORE_URL = "https://apps.apple.com/gb/app/liftie/id6760786458";
 
 export default function Home() {
   return (
@@ -14,8 +15,18 @@ export default function Home() {
             Liftie.
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            The iOS app that makes lifting something you'll stick to. Coming soon.
+            The iOS app that makes lifting something you&apos;ll stick to. Now available on the App Store.
           </p>
+          <div className="pt-2">
+            <Link
+              href={APP_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full bg-foreground px-6 py-3 text-sm font-semibold text-background transition-opacity hover:opacity-90"
+            >
+              Download on the App Store
+            </Link>
+          </div>
           <div
             className="w-full max-w-[280px] mx-auto aspect-[9/19] sm:max-w-[300px] rounded-[1.5rem] sm:rounded-[2rem] bg-muted border border-border/60 flex items-center justify-center overflow-hidden shadow-xl"
             aria-hidden
@@ -97,24 +108,31 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Signup */}
+      {/* Download */}
       <section className="px-4 sm:px-8 py-16 sm:py-24 lg:py-28 border-t border-border/50">
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <h2 className="font-heading font-bold text-2xl sm:text-3xl text-foreground">
-            Get on the list
+            Start using Liftie today
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            We&apos;ll let you know when Liftie is ready.
+            Build consistency with guided programs and track your progress in the app.
           </p>
           <div className="pt-2">
-            <WaitlistForm />
+            <Link
+              href={APP_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full bg-foreground px-6 py-3 text-sm font-semibold text-background transition-opacity hover:opacity-90"
+            >
+              View on the App Store
+            </Link>
           </div>
         </div>
       </section>
 
       <footer className="w-full border-t border-border/50 py-6 sm:py-8 mt-auto">
         <div className="max-w-5xl mx-auto px-4 sm:px-8 text-center text-sm text-muted-foreground">
-          <p>Liftie is coming to the App Store soon.</p>
+          <p>Liftie is now available on the App Store.</p>
           <p>
             <Link href="/privacy">Privacy Policy</Link>
           </p>
